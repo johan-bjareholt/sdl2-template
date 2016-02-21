@@ -1,0 +1,3 @@
+[submodule "libs/simple-logger"]
+	path = libs/simple-logger
+	url = git@github.com:johan-bjareholt/simple-logger.git
