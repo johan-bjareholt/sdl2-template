@@ -4,14 +4,6 @@
 
 Menu* mainMenu;
 
-Button::Button (int x, int y, int w, int h) : Sprite(x, y, w, h) {
-    //mainMenu->buttonSprites->add(this);
-}
-
-void StartButton::click(){
-    log_debug("Clicked on the button");
-}
-
 
 Menu::Menu(){
     log_debug("Loading menu state");
@@ -74,9 +66,9 @@ void Menu::input (SDL_Event e) {
 
     else if ( e.type == SDL_MOUSEBUTTONDOWN ) {
     	if ( e.button.button == SDL_BUTTON_LEFT ){
-            Sprite* button = this->buttonSprites->pointCollideAny(e.button.x, e.button.y);
+            Button* button = (Button*) this->buttonSprites->pointCollideAny(e.button.x, e.button.y);
             if (button){
-                log_debug("Pressed LMB on button");
+                button->click();
             }
     	}
     }

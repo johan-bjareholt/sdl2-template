@@ -13,3 +13,7 @@ A template to quickly make a new SDL2 game
 
 - I have absolutely no idea if the gamecontroller support still works
 - Alot of code cleanup is needed
+
+#### ToDo
+
+- Create basic GUI elements (improving buttons, text unputs, radio buttons? etc.)

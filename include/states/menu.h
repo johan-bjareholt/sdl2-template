@@ -20,12 +20,12 @@ extern Menu* mainMenu;
 
 class Button: public Sprite {
     public:
-        Button(int,int,int,int);
-        void click();
+        Button(int x, int y, int w, int h) : Sprite(x, y, w, h){};
+        virtual void click() = 0;
 };
 
 class StartButton: public Button {
     public:
         StartButton(int x,int y,int w,int h) : Button(x, y, w, h) {}
-        void click();
+        virtual void click(){log_debug("You clicked on the start button");}
 };
