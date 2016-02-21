@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <string>
+
 #include "sprite.h"
 
 SpriteGroup aliveSprites;

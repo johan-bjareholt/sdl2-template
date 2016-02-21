@@ -1,3 +1,5 @@
+#include <SDL.h>
+
 #include "timer.h"
 
 //The frame rate regulator

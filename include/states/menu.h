@@ -1,6 +1,5 @@
 #pragma once
 
-#include "SDL.h"
 #include "colors.h"
 #include "state.h"
 #include "gamecontroller.h"

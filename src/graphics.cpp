@@ -1,3 +1,5 @@
+#include <SDL_image.h>
+
 #include "graphics.h"
 
 // Screen resolution

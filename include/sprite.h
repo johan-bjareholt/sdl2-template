@@ -1,13 +1,16 @@
 #pragma once
 
 #include <list>
-#include <algorithm>
-#include <string>
 
-#include "SDL.h"
+#include <SDL.h>
 
 #include "graphics.h"
 #include "image.h"
+
+class Sprite;
+class SpriteGroup;
+
+extern SpriteGroup aliveSprites;
 
 class Sprite {
     public:
@@ -46,6 +49,3 @@ class SpriteGroup {
         Sprite* pointCollideAny(int,int);
         Sprite* rectCollideAny(SDL_Rect*);
 };
-
-
-extern SpriteGroup aliveSprites;

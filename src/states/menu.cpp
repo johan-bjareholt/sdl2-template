@@ -1,3 +1,5 @@
+#include <SDL.h>
+
 #include "states/menu.h"
 
 Menu* mainMenu;
@@ -74,7 +76,7 @@ void Menu::input (SDL_Event e) {
     	if ( e.button.button == SDL_BUTTON_LEFT ){
             Sprite* button = this->buttonSprites->pointCollideAny(e.button.x, e.button.y);
             if (button){
-                log_debug("Pressed LMB");
+                log_debug("Pressed LMB on button");
             }
     	}
     }

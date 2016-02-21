@@ -1,3 +1,5 @@
+#include <SDL.h>
+
 #include "input.h"
 #include "state.h"
 

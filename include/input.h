@@ -1,6 +1,5 @@
 #pragma once
 
-#include "SDL.h"
 #include "main.h"
 
 extern SDL_Event event;

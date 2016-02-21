@@ -1,6 +1,9 @@
 #pragma once
 
-#include "SDL.h"
+class Timer;
+
+//The frame rate regulator
+extern Timer timer;
 
 class Timer {
     private:
@@ -32,6 +35,3 @@ class Timer {
 
         float per_second_multiplier();
 };
-
-//The frame rate regulator
-extern Timer timer;
